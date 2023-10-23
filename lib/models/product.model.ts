@@ -21,7 +21,7 @@ const productSchema = new mongoose.Schema({
     isOutOfStock: { Type: Boolean },
     users: [
         { email: { type: String, required: true } }
-    ], defailt: [],
+    ], default: [],
 }, { timestamps: true });
 
 const Product = mongoose.models.Product || mongoose.model('Product', productSchema);
