@@ -1,6 +1,6 @@
-import HeroCarousel from "@/components/HeroCarousel"
-import { ProductCard } from "@/components/ProductCard"
-import SearchBar from "@/components/SearchBar"
+import HeroCarousel from "@/Components/HeroCarousel"
+import { ProductCard } from "@/Components/ProductCard"
+import SearchBar from "@/Components/SearchBar"
 import { getAllProducts } from "@/lib/actions"
 import Image from "next/image"
 
