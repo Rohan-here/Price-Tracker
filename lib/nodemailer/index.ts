@@ -96,10 +96,10 @@ export const sendEmail = async (emailContent: EmailContent, sendTo: string[]) =>
     html: emailContent.body,
     subject: emailContent.subject
   }
-
   console.log(mailOptions);
 
   transporter.sendMail(mailOptions, (error: any, info: any) => {
+    console.log('transporter', mailOptions);
     if (error)
       return console.log(error);
     console.log('Email sent : ', info);
